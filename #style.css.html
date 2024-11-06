@@ -1,0 +1,63 @@
+/*style.css*/
+body{
+    font-farmily:arial,sans-serif;
+    background-color:#f0f0f0;
+    margin:0;
+    padding:0;
+}
+header{
+    background-color:#333;
+    color:#fff;
+    padding:20px;
+}
+nav ul li{
+    display:inline;
+    padding:10px;
+}
+nav ul li a:hover{
+    color:#ddd;
+}
+main{
+    desplay:grid;
+    grd-template-columns:1fr 1fr,
+    gap:20px;
+    paddind:20px;
+}
+section{
+    boder:1px solid #ddd;
+    padding:20px;
+}
+.corousel{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1 fr))
+    gap:10px;
+}
+.carousel figure{
+    position:relative;
+    overflow:hidden;
+}
+.carousel img{
+    width:50%
+    height:50%
+}
+.carousel figcaption{
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    background-color:rgba(0,0,0,0,7);
+    color:#fff;
+    padding:5px;
+    transition:transform 0.3s;
+}
+.carousel figcaption:hover{
+    transform:translate(-10px);
+}
+footer{
+    background-color:#333;
+    color:#ff;
+    text-align:center;
+    padding:10px;
+    position:fixed;
+    width:100%;
+    bottom:0;
+}
